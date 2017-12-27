@@ -1,0 +1,84 @@
+.login-container{
+    background-color: #fafafa;
+    padding: 40px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.login-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.login-container form input[type=text], input[type=password]{
+    width: 90%;
+    background-color: white;
+    margin: 5px 0 5px 0;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 100%;
+}
+
+
+.login-container span{
+    font-weight: lighter;
+    font-size: 150%;
+    margin-bottom: 20px;
+
+}
+
+.login-container button{
+    height: 40px;
+    padding-top: 10px;
+    font-size: 70%;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    background-color: orange;
+    color:white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-container div{
+    height: 30px;
+    padding: 10px 10px 0 10px;
+    font-size: 70%;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    color:white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-container div span{
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+.floating-logo{
+    position: absolute;
+    bottom: 0px;
+    right: -40px;
+    width: 150px;
+    z-index: -1;
+}
+
+@media(max-width: 600px){
+    .floating-logo{
+        right: 0;
+        bottom: 0;
+    }
+}

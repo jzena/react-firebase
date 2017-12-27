@@ -1,0 +1,242 @@
+.course-list-container{
+
+}
+.course-page-container h2{
+    font-weight: lighter;
+    font-size: 200%;
+}
+
+.course-list-container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.course-list-card{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 0 0px 15px 0px;
+    background-color: #fafafa;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.course-list-card:hover {
+    box-shadow: 5px 5px 5px lightgrey;
+    border-color:orange;
+}
+
+.course-list-card h5{
+    font-size: 150%;
+    font-weight: lighter;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0 15px;
+}
+
+.course-list-card p{
+    font-size: 100%;
+    font-weight: lighter;
+    color: gray;
+    padding: 0 15px;
+}
+
+.course-list-card .portada{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.course-card-footer{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.course-card-footer div{
+    display: flex;
+    align-items: center;
+}
+
+.course-card-footer span{
+    color:gray;
+}
+
+.course-card-footer div img{
+    border-radius: 50%;
+    max-width: 30px;
+
+}
+
+@media(max-width: 1025px) {
+    .course-list-container {
+        justify-content: flex-start;
+    }
+}
+
+
+@media(max-width: 769px){
+    .course-list-container {
+        max-width: 100%;
+        justify-content: center;
+    }
+}
+
+
+/*Course detail*/
+
+.course-detail-container{
+
+}
+
+.course-detail-container article:first-child{
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.course-action-call{
+    text-decoration: none;
+    background-color: orange;
+    color:white;
+    /*position: absolute;*/
+    bottom:50px;
+    left: calc(50% - 100px);
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+
+.course-action-call:hover{
+    background-color: orangered;
+}
+
+/*descricpion del curso*/
+.course-detail-container article:nth-child(2){
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.course-detail-container article:nth-child(2) h1{
+    font-size: 250%;
+    font-weight: lighter;
+}
+
+.course-detail-container article:nth-child(2) p{
+    font-size: 120%;
+    font-weight: lighter;
+    text-align: justify;
+    letter-spacing:2px;
+    line-height: 120%;
+}
+
+/*author*/
+.course-detail-container article:nth-child(3){
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: #fafafa;
+    padding: 5% 20%;
+    text-align: center;
+}
+
+.course-detail-container article:nth-child(3) h3{
+    font-weight: lighter;
+    font-size: 200%;
+}
+
+.course-detail-container article:nth-child(3) p{
+    font-size: 120%;
+    font-weight: lighter;
+    text-align: justify;
+    letter-spacing:2px;
+    line-height: 120%;
+}
+
+.course-detail-container article:nth-child(3) span {
+    font-size: 150%;
+}
+
+.course-detail-container article:nth-child(3) img{
+    width: 200px;
+    border-radius: 50%;
+}
+
+@media(max-width: 600px){
+    .course-detail-container article:nth-child(2) h1 {
+        font-size: 150%;
+    }
+
+    .course-detail-container article:nth-child(2) p {
+        letter-spacing:inherit;
+        line-height: inherit;
+        font-size: 100%;
+    }
+
+    .course-detail-container article:nth-child(3) p {
+        letter-spacing:inherit;
+        line-height: inherit;
+        font-size: 100%;
+    }
+}
+
+/*Temario*/
+
+.course-syllabus{
+
+}
+
+.course-syllabus div{
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgrey;
+}
+
+.course-syllabus div h5{
+    margin: 0;
+    margin-bottom: 1px;
+    background-color: #fafafa;
+    padding: 10px 10px;
+}
+
+.course-syllabus div p{
+    margin:0;
+    margin-bottom: 1px;
+    background-color: lightgrey;
+    padding: 5px 3px;
+    font-size: 100%;
+}
+
+.course-syllabus div p::after {
+    margin-left: 10px;
+    content: "Ver ahora";
+    font-weight: bolder;
+    color:orange;
+    cursor: pointer;
+}
+
+
+.course-syllabus div p span{
+    color:orange;
+    margin:0 10px;
+}
+
+@media(max-width: 600px){
+    .course-syllabus div p{
+        font-size: 60%;
+    }
+}
+
